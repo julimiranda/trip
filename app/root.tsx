@@ -21,19 +21,6 @@ import { PrismaClient } from '@prisma/client'
 
 export const prisma = new PrismaClient()
 
-export async function action({request}:ActionFunctionArgs){
-    const formData = await request.formData()
-    const name = formData.get("name")
-    const email = formData.get("email")
-    const user = await prisma.user.create({
-        data: {
-          email: email as string,
-          name: name as string,
-        },
-      })
-    console.log(user)
-    return null
-}
 
 export default function App() {
   return (
