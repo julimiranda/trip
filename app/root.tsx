@@ -15,12 +15,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
-} from "@remix-run/react";
-
-import { PrismaClient } from '@prisma/client'
-
-export const prisma = new PrismaClient()
-
+} from "@remix-run/react"
 
 export default function App() {
   return (

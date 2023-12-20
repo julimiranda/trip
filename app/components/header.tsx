@@ -1,3 +1,5 @@
+import { Link } from "lucide-react";
+
 export default function Header(){
     return (
         <>
@@ -12,7 +14,7 @@ export default function Header(){
                 <p>DOCS</p>
             </div>
             <div>
-                LOG IN 
+               <a href="/signup"> LOG IN </a>
             </div>
             </nav>  
         </>
